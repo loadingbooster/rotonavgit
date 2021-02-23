@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Authentication">
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Authentication"
+    >
 
-    <Button
-        android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="login"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="381dp" />
+        <EditText
+            android:id="@+id/loginid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Login Id"
+            android:textAlignment="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/loginid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="loginid"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="202dp" />
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:hint="Password"
+            android:inputType="number"/>
 
-    <EditText
-        android:id="@+id/loginpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="password"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="284dp" />
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
