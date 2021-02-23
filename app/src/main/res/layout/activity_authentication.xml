@@ -4,13 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerInParent="true"
-    android:gravity="center"
+    android:gravity="bottom"
+    android:layout_marginBottom="100dp"
     android:orientation="vertical"
     tools:context=".Authentication"
     >
 
-        <EditText
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:text="HI!," />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:text="Please Login to Continue" />
+
+    <EditText
             android:id="@+id/loginid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,12 +49,13 @@
             android:hint="Password"
             android:inputType="number"/>
 
-        <Button
-            android:id="@+id/loginbutton"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="login" />
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="login"
+        app:cornerRadius="30" />
 
 </LinearLayout>
