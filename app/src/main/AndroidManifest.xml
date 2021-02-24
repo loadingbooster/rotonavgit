@@ -15,7 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RotoNav">
-        <activity android:name=".Authentication"></activity>
+        <activity android:name=".Authentication"
+            android:windowSoftInputMode="adjustResize"
+            >
+
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -30,7 +34,9 @@
 
         <activity
             android:name=".maps_activity"
-            android:label="@string/title_activity_maps_activity"></activity>
+            android:label="@string/title_activity_maps_activity">
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
